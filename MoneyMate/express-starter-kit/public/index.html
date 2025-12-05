@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Express Starter Kit - A production-ready Node.js Express template">
+    <title>Express Starter Kit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #1a1a1a;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+        
+        .status {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .status-text {
+            color: #155724;
+            font-weight: 600;
+        }
+        
+        .endpoints {
+            text-align: left;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .endpoints h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        
+        .endpoint {
+            font-family: 'Courier New', monospace;
+            background: #e9ecef;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+        
+        .endpoint:last-child {
+            margin-bottom: 0;
+        }
+        
+        .method {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-weight: 600;
+            font-size: 0.75rem;
+            margin-right: 8px;
+        }
+        
+        .get { background: #28a745; color: white; }
+        .post { background: #007bff; color: white; }
+        
+        .footer {
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🚀</div>
+        <h1>Express Starter Kit</h1>
+        <p class="subtitle">Production-ready Node.js Express template</p>
+        
+        <div class="status">
+            <span class="status-text">✓ Server is running successfully!</span>
+        </div>
+        
+        <div class="endpoints">
+            <h3>Available Endpoints:</h3>
+            <div class="endpoint">
+                <span class="method get">GET</span>/health - Health check
+            </div>
+            <div class="endpoint">
+                <span class="method get">GET</span>/info - Server information
+            </div>
+            <div class="endpoint">
+                <span class="method get">GET</span>/api - API welcome
+            </div>
+            <div class="endpoint">
+                <span class="method get">GET</span>/api/status - API status
+            </div>
+            <div class="endpoint">
+                <span class="method get">GET</span>/api/users - Get all users
+            </div>
+            <div class="endpoint">
+                <span class="method post">POST</span>/api/users - Create user
+            </div>
+        </div>
+        
+        <p class="footer">
+            Ready to deploy on <a href="https://render.com" target="_blank">Render</a> | 
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </p>
+    </div>
+</body>
+</html>

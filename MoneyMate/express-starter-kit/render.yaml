@@ -1,0 +1,54 @@
+# =============================================================================
+# Render.com Deployment Configuration
+# =============================================================================
+# This file configures automatic deployment settings for Render.
+# Render will detect this file and use these settings for deployment.
+#
+# Documentation: https://render.com/docs/blueprint-spec
+# =============================================================================
+
+services:
+  # Web Service Configuration
+  - type: web
+    name: express-starter-kit
+    runtime: node
+    
+    # Build Configuration
+    buildCommand: npm install
+    startCommand: npm start
+    
+    # Environment Configuration
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+    
+    # Health Check Configuration
+    healthCheckPath: /health
+    
+    # Auto-deploy from main branch
+    autoDeploy: true
+    
+    # Instance Configuration (adjust based on your needs)
+    # plan: free  # Options: free, starter, standard, pro
+    
+    # Region (optional)
+    # region: oregon  # Options: oregon, ohio, virginia, frankfurt, singapore
+
+# =============================================================================
+# Additional Services (uncomment and configure as needed)
+# =============================================================================
+
+# PostgreSQL Database
+# - type: pgsql
+#   name: express-starter-db
+#   plan: free
+#   databaseName: express_app
+#   user: express_user
+
+# Redis Cache
+# - type: redis
+#   name: express-starter-cache
+#   plan: free
+#   maxmemoryPolicy: allkeys-lru
